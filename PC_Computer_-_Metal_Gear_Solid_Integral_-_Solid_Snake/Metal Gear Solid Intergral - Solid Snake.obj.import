@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Metal Gear Solid Intergral - Solid Snake.obj-d8e1743b3c86e2415063fa5e7d9cdd69.mesh"
+
+[deps]
+
+files=[ "res://.import/Metal Gear Solid Intergral - Solid Snake.obj-d8e1743b3c86e2415063fa5e7d9cdd69.mesh" ]
+
+source_file="res://PC_Computer_-_Metal_Gear_Solid_Integral_-_Solid_Snake/Metal Gear Solid Intergral - Solid Snake.obj"
+dest_files=[ "res://.import/Metal Gear Solid Intergral - Solid Snake.obj-d8e1743b3c86e2415063fa5e7d9cdd69.mesh", "res://.import/Metal Gear Solid Intergral - Solid Snake.obj-d8e1743b3c86e2415063fa5e7d9cdd69.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
