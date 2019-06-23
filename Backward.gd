@@ -13,6 +13,7 @@ func _ready():
 
 func update(delta):
 	var velocity = Vector3()
-	velocity.x = $"root/Spatial/Character".Charspeed * delta * -1
+	#TODO: Make sure this reference to character actually works
+	velocity.x = $"root/Spatial/Player/Character".charSpeed * delta * -1
 	move_and_collide(velocity)
 	

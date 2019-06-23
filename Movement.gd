@@ -1,5 +1,8 @@
-extends MainPlayer
+extends CharStates
 
+class_name charMovement
+
+signal stateCalculated
 #TODO: Replace jumpInProgress with a check to see if the KinematicBody is above the ground
 var jumpInProgress = false
 
@@ -17,13 +20,13 @@ func _ready():
 	pass
 
 func _process(delta):
-	var input : String = get_node("root/Spatial/Player").currentInputs
+	var input : String = .get_node("root/Spatial/Player").currentInputs
 	currentState = statesMapCharMovement[convert_input_to_state(input)]
 	if currentState == statesMapCharMovement["jump"]:
 		jumpInProgress == true
 	if jumpInProgress == true:
 		currentState = statesMapCharMovement["jump"]
-	currentState.update(delta)
+	.emit_signal("stateCalculated", currentState)
 
 func convert_input_to_state(input):
 	match input.left(1):

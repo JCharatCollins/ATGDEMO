@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "MainPlayer",
+"class": "CharStates",
+"language": "GDScript",
+"path": "res://States.gd"
+}, {
+"base": "MainPlayer",
 "class": "Character",
 "language": "GDScript",
 "path": "res://Character.gd"
@@ -18,10 +23,23 @@ _global_script_classes=[ {
 "class": "MainPlayer",
 "language": "GDScript",
 "path": "res://Player.gd"
+}, {
+"base": "CharStates",
+"class": "charActions",
+"language": "GDScript",
+"path": "res://Actions.gd"
+}, {
+"base": "CharStates",
+"class": "charMovement",
+"language": "GDScript",
+"path": "res://Movement.gd"
 } ]
 _global_script_class_icons={
+"CharStates": "",
 "Character": "",
-"MainPlayer": ""
+"MainPlayer": "",
+"charActions": "",
+"charMovement": ""
 }
 
 [application]
